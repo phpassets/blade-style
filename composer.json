@@ -1,0 +1,26 @@
+{
+	"name": "phpassets/blade-style",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Lennart Carstens-Behrens",
+			"email": "lennart.carbe@gmail.com"
+		}
+	],
+	"require": {
+		"phpassets/css-factory": "*",
+		"phpassets/sass-compiler": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"PhpAssets\\Css\\Blade\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"PhpAssets\\Css\\Blade\\ServiceProvider"
+			]
+		}
+	}
+}
